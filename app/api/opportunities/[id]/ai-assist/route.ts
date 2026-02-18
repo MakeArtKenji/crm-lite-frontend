@@ -1,7 +1,7 @@
 // app/api/opportunities/[id]/ai-assist/route.ts
 import { findOpportunity } from "@/lib/store";
 
-const BACKEND_URL = process.env.BACKEND_API_URL || "http://127.0.0.1:8000";
+const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || "http://127.0.0.1:8000";
 
 // TRIGGER NEW ANALYSIS
 export async function POST(
